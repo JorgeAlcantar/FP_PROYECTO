@@ -48,7 +48,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
             //IF STATEMENTS AGAIN :D
             if (res == RES3){
                 System.out.println("¡¡CORRECTO!!");
-            } else {
+            }else{
                 System.out.println("¡¡INCORRECTO!!");
             }
             
@@ -110,6 +110,32 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                                             input2 = text.nextLine();
                                             if(input2.equals(caracteres[2])){
                                                 System.out.println("¡¡CORRECTO!!");
+                                                String Texto[] = {"La hipotenusa es conocida por ser la medida de la suma de los dos catetos de los triángulos elevados al cuadrado, con raíz cuadrada.", "Tales de Mileto propone que la realidad y todo lo que la conforma proviene del agua.", "El hombre es conocido por su constante determinación para adquirir conocimiento."};
+                                                System.out.println("INTRODUCE LOS SIGUIENTES TEXTOS CORRECTAMENTE: ");
+                                                System.out.println(Texto[0]);
+                                                Scanner text1 = new Scanner(System.in);
+                                                input2 = text1.nextLine();
+                                                if(input2.equals(Texto[0])){
+                                                    System.out.println("¡¡CORRECTO!!");
+                                                    System.out.println(Texto[1]);
+                                                    Scanner text2 = new Scanner(System.in);
+                                                    input2 = text2.nextLine();
+                                                    if(input2.equals(Texto[1])){
+                                                        System.out.println("¡¡CORRECTO!!");  
+                                                        System.out.println(Texto[2]);
+                                                        Scanner text3 = new Scanner(System.in);
+                                                        input2 = text3.nextLine();
+                                                        if(input2.equals(Texto[2])){
+                                                            System.out.println("¡¡CORRECTO!!"); 
+                                                        }else{
+                                                            System.out.println("¡¡INCORRECTO!!");
+                                                        }
+                                                    }else{
+                                                        System.out.println("¡¡INCORRECTO!!");
+                                                    }
+                                                }else{
+                                                        System.out.println("¡¡INCORRECTO!!");
+                                                }
                                             }else{
                                                 System.out.println("¡¡INCORRECTO!!");
                                             }
