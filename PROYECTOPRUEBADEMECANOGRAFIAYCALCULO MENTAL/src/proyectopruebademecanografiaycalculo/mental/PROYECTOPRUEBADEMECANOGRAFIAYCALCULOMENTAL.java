@@ -19,7 +19,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
         int acceso;
         
         //MENU DEL PROYECTO
-        System.out.println("****FORTALECIMIENTO DE MECANOGRAFÍA Y CALUCLO MENTAL***");
+        System.out.println("****FORTALECIMIENTO DE MECANOGRAFÍA Y CALCÚLO MENTAL***");
         System.out.println("¿Mecanografía o Calculo Mental (0 o 1)?");
         acceso = input.nextInt();
         
