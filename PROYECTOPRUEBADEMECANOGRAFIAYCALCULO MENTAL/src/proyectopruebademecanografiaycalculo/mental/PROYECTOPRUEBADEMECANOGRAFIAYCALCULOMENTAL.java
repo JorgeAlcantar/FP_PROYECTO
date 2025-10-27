@@ -19,41 +19,295 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
         int acceso;
         
         //MENU DEL PROYECTO
-        System.out.println("****FORTALECIMIENTO DE MECANOGRAFÍA Y CALCÚLO MENTAL***");
+        System.out.println("****FORTALECIMIENTO DE MECANOGRAFÍA Y CÁLCULO MENTAL***");
         System.out.println("¿Mecanografía o Calculo Mental (0 o 1)?");
         acceso = input.nextInt();
         
         if(acceso == 1){
-            //DECLARACIÓN DE VARIABLES Y OPERACIONES
-            int valor1 = number.nextInt(30), valor2 = number.nextInt(30), res;
-            res = valor1 + valor2;
-            int RES1, RES3;
-            
-            //IMPRIMIR E INPUT DEL SCANNER
-            System.out.println("***CALCÚLO MENTAL***");
-            System.out.println("Responde las siguientes operaciones correctamente, asegurate de responder en valores enteros, sin decimales.");
-            System.out.println(valor1 + "+" + valor2);
-            RES1 = input.nextInt();
-            
-            if(RES1 == res){
-            System.out.println("¡¡CORRECTO!!");
-            //ANOTHER OPERATION D:
-            int valor3 = number.nextInt(30), valor4 = number.nextInt(30);
-            res = valor3 - valor4;
-            
-            //RESUELVE, POR FAVOR ._.
-            System.out.println(valor3 + "-" + valor4);
-            RES3 = input.nextInt();
-            
-            //IF STATEMENTS AGAIN :D
-            if (res == RES3){
-                System.out.println("¡¡CORRECTO!!");
-            }else{
-                System.out.println("¡¡INCORRECTO!!");
+            //INICIALIZACIÓN DE VARIABLES
+            int eleccion, eleccion1;
+            //PRUEBA DE MATEMÁTICAS
+            System.out.println("*** CÁLCULO MENTAL ***");
+            System.out.println("");
+            System.out.println("DIFICULTAD");
+            System.out.println("");
+            System.out.println("FACÍL (0)");
+            System.out.println("MEDIA (1)");
+            System.out.println("DIFÍCIL (2)");
+            //INTRODUCCIÓN DE DATOS
+            eleccion = input.nextInt();
+            //DECLARACIONES DE IF
+            if(eleccion == 0){
+                //INICIO DE REDACCIÓN
+                System.out.println("*** CÁLCULO MENTAL ***");
+                System.out.println("DIFICULTAD: FACÍL");
+                System.out.println("¿Qué tipo de operaciones desea realizar?");
+                System.out.println("SUMA (1)");
+                System.out.println("RESTA (2)");
+                System.out.println("MULTIPLICACIÓN (3)");
+                System.out.println("DIVISIÓN (4)");
+                //INTRODUCCIÓN DE DATOS
+                eleccion1 = input.nextInt();
+                //DECLARACIÓN IF
+                if(eleccion1 == 1){
+                    System.out.println("***SUMA***");
+                    System.out.println("¡Introduce las respuestas correctas!");
+                    for(int i = 0; i < 9000; i++){
+                        //INICIALIZACION DE VARIABLES
+                        int num1 = number.nextInt(50), num2 = number.nextInt(50);
+                        int res1;
+                        System.out.println(num1 + "+" + num2);
+                        res1 = input.nextInt();
+                        int resultado = num1 + num2;
+                        //ESTRUCTURA DE DECISIÓN
+                        if(res1 == resultado){
+                            System.out.println("¡CORRECTO!");
+                        }else{
+                            System.out.println("¡INCORRECTO!");
+                            break;
+                }
+                
             }
-            
-            }else{
-                System.out.println("¡¡INCORRECTO!!");
+                }else if(eleccion1 == 2){
+                        System.out.println("***RESTA***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                        for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(50), num2 = number.nextInt(50);
+                            int res1;
+                            System.out.println(num1 + "-" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 - num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+                }else if(eleccion1 == 3){
+                        System.out.println("***MULTIPLICACIÓN***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                       for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(30), num2 = number.nextInt(30);
+                            int res1;
+                            System.out.println(num1 + "*" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 * num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+
+                }else if(eleccion1 == 4){
+                        System.out.println("***DIVISIÓN***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                        for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(30), num2 = number.nextInt(9);
+                            int res1;
+                            System.out.println(num1 + "/" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 / num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+            }
+                
+            }else if(eleccion == 1){
+                System.out.println("*** CÁLCULO MENTAL ***");
+                System.out.println("DIFICULTAD: MEDIA");
+                System.out.println("¿Qué tipo de operaciones desea realizar?");
+                System.out.println("SUMA (1)");
+                System.out.println("RESTA (2)");
+                System.out.println("MULTIPLICACIÓN (3)");
+                System.out.println("DIVISIÓN (4)");
+                //INTRODUCCIÓN DE DATOS
+                eleccion1 = input.nextInt();
+                //DECLARACIÓN IF
+                if(eleccion1 == 1){
+                    System.out.println("***SUMA***");
+                    System.out.println("¡Introduce las respuestas correctas!");
+                    for(int i = 0; i < 9000; i++){
+                        //INICIALIZACION DE VARIABLES
+                        int num1 = number.nextInt(100), num2 = number.nextInt(100);
+                        int res1;
+                        System.out.println(num1 + "+" + num2);
+                        res1 = input.nextInt();
+                        int resultado = num1 + num2;
+                        //ESTRUCTURA DE DECISIÓN
+                        if(res1 == resultado){
+                            System.out.println("¡CORRECTO!");
+                        }else{
+                            System.out.println("¡INCORRECTO!");
+                            break;
+                }
+                
+            }
+                }else if(eleccion1 == 2){
+                        System.out.println("***RESTA***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                        for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(80), num2 = number.nextInt(80);
+                            int res1;
+                            System.out.println(num1 + "-" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 - num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+                }else if(eleccion1 == 3){
+                        System.out.println("***MULTIPLICACIÓN***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                       for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(50), num2 = number.nextInt(50);
+                            int res1;
+                            System.out.println(num1 + "*" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 * num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+
+                }else if(eleccion1 == 4){
+                        System.out.println("***DIVISIÓN***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                        for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(60), num2 = number.nextInt(20);
+                            int res1;
+                            System.out.println(num1 + "/" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 / num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+            }
+        
+            }else if(eleccion == 2){
+                System.out.println("*** CÁLCULO MENTAL ***");
+                System.out.println("DIFICULTAD: DIFICÍL");
+                System.out.println("¿Qué tipo de operaciones desea realizar?");
+                System.out.println("SUMA (1)");
+                System.out.println("RESTA (2)");
+                System.out.println("MULTIPLICACIÓN (3)");
+                System.out.println("DIVISIÓN (4)");
+                //INTRODUCCIÓN DE DATOS
+                eleccion1 = input.nextInt();
+                //DECLARACIÓN IF
+                if(eleccion1 == 1){
+                    System.out.println("***SUMA***");
+                    System.out.println("¡Introduce las respuestas correctas!");
+                    for(int i = 0; i < 9000; i++){
+                        //INICIALIZACION DE VARIABLES
+                        int num1 = number.nextInt(3000), num2 = number.nextInt(3000);
+                        int res1;
+                        System.out.println(num1 + "+" + num2);
+                        res1 = input.nextInt();
+                        int resultado = num1 + num2;
+                        //ESTRUCTURA DE DECISIÓN
+                        if(res1 == resultado){
+                            System.out.println("¡CORRECTO!");
+                        }else{
+                            System.out.println("¡INCORRECTO!");
+                            break;
+                }
+                
+            }
+                }else if(eleccion1 == 2){
+                        System.out.println("***RESTA***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                        for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(300), num2 = number.nextInt(300);
+                            int res1;
+                            System.out.println(num1 + "-" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 - num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+                }else if(eleccion1 == 3){
+                        System.out.println("***MULTIPLICACIÓN***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                       for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(50), num2 = number.nextInt(50);
+                            int res1;
+                            System.out.println(num1 + "*" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 * num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+
+                }else if(eleccion1 == 4){
+                        System.out.println("***DIVISIÓN***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                        for(int i = 0; i < 9000; i++){
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(100), num2 = number.nextInt(50);
+                            int res1;
+                            System.out.println(num1 + "/" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 / num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                            }
+
+                        }
+                }
+        
             }
         }else if(acceso == 0){
             //DECLARACIÓN DE VARIABLES
