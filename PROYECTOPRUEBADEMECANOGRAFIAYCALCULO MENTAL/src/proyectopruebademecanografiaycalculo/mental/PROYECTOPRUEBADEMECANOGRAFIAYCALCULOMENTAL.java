@@ -46,14 +46,13 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 System.out.println("RESTA (2)");
                 System.out.println("MULTIPLICACIÓN (3)");
                 System.out.println("DIVISIÓN (4)");
-                System.out.println("MIXTO (5)");
                 //INTRODUCCIÓN DE DATOS
                 eleccion1 = input.nextInt();
                 //DECLARACIÓN IF
                 if(eleccion1 == 1){
                     System.out.println("***SUMA***");
                     System.out.println("¡Introduce las respuestas correctas!");
-                    while(true){
+                    for(int i = 0; i < 9000; i++){
                         //INICIALIZACION DE VARIABLES
                         int num1 = number.nextInt(50), num2 = number.nextInt(50);
                         int res1;
@@ -72,7 +71,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 2){
                         System.out.println("***RESTA***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                        for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(50), num2 = number.nextInt(50);
                             int res1;
@@ -91,7 +90,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 3){
                         System.out.println("***MULTIPLICACIÓN***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                       while(true){
+                       for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(30), num2 = number.nextInt(30);
                             int res1;
@@ -111,7 +110,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 4){
                         System.out.println("***DIVISIÓN***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                        for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(30), num2 = number.nextInt(9);
                             int res1;
@@ -127,6 +126,28 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                     }
 
                 }
+                }else if(eleccion1 == 5){//CÓDIGO DE PRUEBA *** IGNORAR ***
+                        System.out.println("***MIXTO***");
+                        System.out.println("¡Introduce las respuestas correctas!");
+                        for(int i = 0; i < 9000; i++){
+                            
+                            //INICIALIZACION DE VARIABLES
+                            int num1 = number.nextInt(30), num2 = number.nextInt(9);
+                            int res1;
+                            System.out.println(num1 + "/" + num2);
+                            res1 = input.nextInt();
+                            int resultado = num1 / num2;
+                            //ESTRUCTURA DE DECISIÓN
+                            if(res1 == resultado){
+                                System.out.println("¡CORRECTO!");
+                            }else{
+                                System.out.println("¡INCORRECTO!");
+                                break;
+                    }
+
+                }
+            }
+                
             }else if(eleccion == 1){
                 System.out.println("*** CÁLCULO MENTAL ***");
                 System.out.println("DIFICULTAD: MEDIA");
@@ -141,7 +162,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 if(eleccion1 == 1){
                     System.out.println("***SUMA***");
                     System.out.println("¡Introduce las respuestas correctas!");
-                    while(true){
+                    for(int i = 0; i < 9000; i++){
                         //INICIALIZACION DE VARIABLES
                         int num1 = number.nextInt(100), num2 = number.nextInt(100);
                         int res1;
@@ -160,7 +181,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 2){
                         System.out.println("***RESTA***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                        for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(80), num2 = number.nextInt(80);
                             int res1;
@@ -179,7 +200,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 3){
                         System.out.println("***MULTIPLICACIÓN***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                       for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(50), num2 = number.nextInt(50);
                             int res1;
@@ -199,7 +220,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 4){
                         System.out.println("***DIVISIÓN***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                        for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(60), num2 = number.nextInt(20);
                             int res1;
@@ -231,7 +252,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 if(eleccion1 == 1){
                     System.out.println("***SUMA***");
                     System.out.println("¡Introduce las respuestas correctas!");
-                    while(true){
+                    for(int i = 0; i < 9000; i++){
                         //INICIALIZACION DE VARIABLES
                         int num1 = number.nextInt(3000), num2 = number.nextInt(3000);
                         int res1;
@@ -250,7 +271,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 2){
                         System.out.println("***RESTA***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                        for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(300), num2 = number.nextInt(300);
                             int res1;
@@ -269,7 +290,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 3){
                         System.out.println("***MULTIPLICACIÓN***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                       for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(50), num2 = number.nextInt(50);
                             int res1;
@@ -289,7 +310,7 @@ public class PROYECTOPRUEBADEMECANOGRAFIAYCALCULOMENTAL {
                 }else if(eleccion1 == 4){
                         System.out.println("***DIVISIÓN***");
                         System.out.println("¡Introduce las respuestas correctas!");
-                        while(true){
+                        for(int i = 0; i < 9000; i++){
                             //INICIALIZACION DE VARIABLES
                             int num1 = number.nextInt(100), num2 = number.nextInt(50);
                             int res1;
