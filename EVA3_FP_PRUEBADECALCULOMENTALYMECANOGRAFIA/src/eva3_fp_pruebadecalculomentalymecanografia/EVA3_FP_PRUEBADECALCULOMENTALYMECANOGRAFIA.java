@@ -14,7 +14,11 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         Scanner input = new Scanner(System.in);
         int eleccion;
         do{
+            System.out.println("");
             System.out.println("***PRUEBA DE MECANOGRAFÍA Y CÁLCULO MENTAL***");
+            System.out.println("");
+            System.out.println("INTRODUCE EL NÚMERO QUE CORRESPONDE A LA OPCIÓN: ");
+            System.out.println("");
             System.out.println("1. Cálculo Mental");
             System.out.println("2. Mecanografía");
             System.out.println("3. Terminar programa");
@@ -65,10 +69,10 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("*** CÁLCULO MENTAL ***");
         System.out.println("DIFICULTAD: FACÍL");
         System.out.println("¿Qué tipo de operaciones desea realizar?");
-        System.out.println("SUMA (1)");
-        System.out.println("RESTA (2)");
-        System.out.println("MULTIPLICACIÓN (3)");
-        System.out.println("DIVISIÓN (4)");
+        System.out.println("1. Suma.");
+        System.out.println("2. Resta.");
+        System.out.println("3. Multiplicación.");
+        System.out.println("4. División.");
         System.out.println("Cualquier otro número. MENÚ PRINCIPAL.");
         //INTRODUCCIÓN DE DATOS
         eleccion = input.nextInt();
@@ -98,13 +102,22 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             int num1 = number.nextInt(50), num2 = number.nextInt(50);
             int res1;
             System.out.println(num1 + "+" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 + num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -120,13 +133,22 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             int num1 = number.nextInt(50), num2 = number.nextInt(50);
             int res1;
             System.out.println(num1 + "-" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 - num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -138,17 +160,27 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("***MULTIPLICACIÓN***");
         System.out.println("¡Introduce las respuestas correctas!");
         while(true){
-             //INICIALIZACION DE VARIABLES
-             int num1 = number.nextInt(30), num2 = number.nextInt(30);
-             int res1;
-             System.out.println(num1 + "*" + num2);
-             res1 = input.nextInt();
-             int resultado = num1 * num2;
-             //ESTRUCTURA DE DECISIÓN
+            //INICIALIZACION DE VARIABLES
+            int num1 = number.nextInt(30), num2 = number.nextInt(30);
+            int res1;
+            System.out.println(num1 + "*" + num2);
+            long inicio = System.currentTimeMillis();
+            res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
+            int resultado = num1 * num2;
+            //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
-                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -161,16 +193,26 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("¡Introduce las respuestas correctas!");
         while(true){
             //INICIALIZACION DE VARIABLES
-            int num1 = number.nextInt(30), num2 = number.nextInt(9);
+            int num1 = number.nextInt(30) + 1, num2 = number.nextInt(9) + 1;
             int res1;
             System.out.println(num1 + "/" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 / num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -183,10 +225,10 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("*** CÁLCULO MENTAL ***");
         System.out.println("DIFICULTAD: MEDIA");
         System.out.println("¿Qué tipo de operaciones desea realizar?");
-        System.out.println("SUMA (1)");
-        System.out.println("RESTA (2)");
-        System.out.println("MULTIPLICACIÓN (3)");
-        System.out.println("DIVISIÓN (4)");
+        System.out.println("1. Suma.");
+        System.out.println("2. Resta.");
+        System.out.println("3. Multiplicación.");
+        System.out.println("4. División.");
         System.out.println("Cualquier otro número. MENÚ PRINCIPAL.");
         //INTRODUCCIÓN DE DATOS
         eleccion = input.nextInt();
@@ -201,6 +243,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
                 mediaMultiplicacion();
                 break;
             case 4:
+                mediaDivision();
                 break;
         }
     }
@@ -214,13 +257,23 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             int num1 = number.nextInt(100), num2 = number.nextInt(100);
             int res1;
             System.out.println(num1 + "+" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 + num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -236,13 +289,23 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             int num1 = number.nextInt(80), num2 = number.nextInt(80);
             int res1;
             System.out.println(num1 + "-" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 - num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -254,17 +317,27 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("***MULTIPLICACIÓN***");
         System.out.println("¡Introduce las respuestas correctas!");
         while(true){
-             //INICIALIZACION DE VARIABLES
-             int num1 = number.nextInt(50), num2 = number.nextInt(50);
-             int res1;
-             System.out.println(num1 + "*" + num2);
-             res1 = input.nextInt();
-             int resultado = num1 * num2;
+            //INICIALIZACION DE VARIABLES
+            int num1 = number.nextInt(50), num2 = number.nextInt(50);
+            int res1;
+            System.out.println(num1 + "*" + num2);
+            long inicio = System.currentTimeMillis();
+            res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
+            int resultado = num1 * num2;
              //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
-                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -277,16 +350,26 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("¡Introduce las respuestas correctas!");
         while(true){
             //INICIALIZACION DE VARIABLES
-            int num1 = number.nextInt(60), num2 = number.nextInt(20);
+            int num1 = number.nextInt(60) + 1, num2 = number.nextInt(20) + 1;
             int res1;
             System.out.println(num1 + "/" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 / num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -331,13 +414,23 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             int num1 = number.nextInt(3000), num2 = number.nextInt(3000);
             int res1;
             System.out.println(num1 + "+" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 + num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -353,13 +446,23 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             int num1 = number.nextInt(300), num2 = number.nextInt(300);
             int res1;
             System.out.println(num1 + "-" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 - num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -375,13 +478,23 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             int num1 = number.nextInt(50), num2 = number.nextInt(50);
             int res1;
             System.out.println(num1 + "*" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
             int resultado = num1 * num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -394,16 +507,27 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("¡Introduce las respuestas correctas!");
         while(true){
             //INICIALIZACION DE VARIABLES
-            int num1 = number.nextInt(100), num2 = number.nextInt(50);
+            int num1 = number.nextInt(100) + 1, num2 = number.nextInt(50) + 1;
             int res1;
             System.out.println(num1 + "/" + num2);
+            long inicio = System.currentTimeMillis();
             res1 = input.nextInt();
+            long fin = System.currentTimeMillis();
+            //COMPROBACIÓN DE RESULTADO
             int resultado = num1 / num2;
             //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
+                System.out.println("");
                 System.out.println("¡CORRECTO!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡INCORRECTO!");
+                System.out.println("");
                 break;
             }
         }
@@ -473,11 +597,22 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         while(true){
             int posicion = number.nextInt(teclado.length);
             System.out.println(teclado[posicion]);
+            long inicio = System.currentTimeMillis();
             respuestaTeclado = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(respuestaTeclado.equals(teclado[posicion])){
-                System.out.println("CORRECTO!!");
+                System.out.println("");
+                System.out.println("¡¡CORRECTO!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
-                System.out.println("INCORRECTO!!");
+                System.out.println("");
+                System.out.println("¡¡INCORRECTO!!");
+                System.out.println("");
+                System.out.println("");
                 break;
             }
         }
@@ -495,11 +630,21 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             String respuestaPalabra;
             int posicion = number.nextInt(palabras.length);
             System.out.println(palabras[posicion]);
+            long inicio = System.currentTimeMillis();
             respuestaPalabra = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(respuestaPalabra.equals(palabras[posicion])){
+                System.out.println("");
                 System.out.println("¡¡CORRECTO!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡¡INCORRECTO!!");
+                System.out.println("");
                 break;
             }
         }
@@ -508,7 +653,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     public static void oracionesSpanish(){
         Scanner input = new Scanner(System.in);
         Random number = new Random();
-        String[] oraciones = {"El rápido zorro marrón salta sobre el perro perezoso con gran agilidad.", "Mi hermana menor cocinó una deliciosa cena para toda la familia anoche.", "Los estudiantes entregaron todos sus proyectos finales la semana pasada sin falta.", "Viajaremos a la playa más hermosa del país el próximo verano.", "El concierto de la banda de rock fue absolutamente increíble y vibrante.", ".  La nueva biblioteca del centro abrirá sus puertas al público mañana.", "El científico explicó el complejo experimento con palabras muy sencillas y claras.", "Compré unas manzanas rojas y jugosas en el mercado del pueblo.", "El equipo de fútbol entrenó con mucha intensidad durante toda la tarde.", "La película que vimos en el cine tenía unos efectos especiales asombrosos.", "El jardín de mi abuela está lleno de coloridas flores en primavera.", "Aprendió a tocar la guitarra clásica con solo practicar unos meses.", "El vuelo hacia la ciudad europea tuvo un retraso de varias horas.", "La empresa lanzará un producto innovador al mercado el próximo trimestre.", "El antiguo castillo sobre la colina tiene una leyenda misteriosa y antigua."};
+        String[] oraciones = {"El rápido zorro marrón salta sobre el perro perezoso con gran agilidad.", "Mi hermana menor cocinó una deliciosa cena para toda la familia anoche.", "Los estudiantes entregaron todos sus proyectos finales la semana pasada sin falta.", "Viajaremos a la playa más hermosa del país el próximo verano.", "El concierto de la banda de rock fue absolutamente increíble y vibrante.", ".  La nueva biblioteca del centro abrirá sus puertas al público mañana.", "El científico explicó el complejo experimento con palabras muy sencillas y claras.", "Compré unas manzanas rojas y jugosas en el mercado del pueblo.", "El equipo de fútbol entrenó con mucha intensidad durante toda la tarde.", "La película que vimos en el cine tenía unos efectos especiales asombrosos.", "El jardín de mi abuela está lleno de coloridas flores en primavera.", "Aprendió a tocar la guitarra clásica con solo practicar unos meses.", "El vuelo hacia la ciudad europea tuvo un retraso de varias horas.", "La empresa lanzará un producto innovador al mercado el próximo trimestre.", "El antiguo castillo sobre la colina tiene una leyenda misteriosa y antigua.", "El viejo marinero contaba historias fascinantes sobre sus viajes por el mundo.", "La luz de la luna iluminaba el camino serpenteante del bosque.", ". Necesito encontrar mis llaves antes de salir de la casa rápidamente.", "El pan recién horneado llenaba la cocina con un aroma delicioso.", "El niño leyó un libro muy interesante sobre dinosaurios gigantes.", "Nuestro vecino pintó su casa de un color azul muy brillante.", "El proyecto final requirió mucho esfuerzo y dedicación constante.", "El gato persiguió al ratón por toda la casa y el jardín.", ". La tormenta de anoche causó algunos daños en la ciudad.", "El médico recetó las medicinas para la gripe severa.", "El camino hacia la cima de la montaña era empinado y peligroso.", "El juez tomó una decisión importante para la comunidad local.", "El pastel de chocolate es su postre favorito desde pequeño.", "El autobús escolar pasa por mi calle todas las mañanas.", "El programa de televisión terminó con una sorpresa increíble.", "El viento fuerte sacudió las ventanas de la oficina central.", "La abuela tejió un suéter cálido para el invierno helado.", "El chef preparó un plato especial para los invitados.", "El artista pintó un cuadro abstracto con colores vibrantes."};
         System.out.println("***ORACIONES***");
         System.out.println("");
         System.out.println("INTRODUCE LAS SIGUIENTES ORACIONES CORRECTAMENTE: ");
@@ -517,11 +662,21 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             String respuestaOracion;
             int posicion = number.nextInt(oraciones.length);
             System.out.println(oraciones[posicion]);
+            long inicio = System.currentTimeMillis();
             respuestaOracion = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(respuestaOracion.equals(oraciones[posicion])){
+                System.out.println("");
                 System.out.println("¡¡CORRECTO!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡¡INCORRECTO!!");
+                System.out.println("");
                 break;
             }
         }
@@ -538,11 +693,21 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             String respuestaParrafo;
             int posicion = number.nextInt(textos.length);
             System.out.println(textos[posicion]);
+            long inicio = System.currentTimeMillis();
             respuestaParrafo = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(respuestaParrafo.equals(textos[posicion])){
+                System.out.println("");
                 System.out.println("¡¡CORRECTO!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIEMPO: " + tiempo + " segundos");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("¡¡INCORRECTO!!");
+                System.out.println("");
                 break;
             }
         }
@@ -589,11 +754,21 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             String answerKeyboard;
             int posicion = number.nextInt(keyboard.length);
             System.out.println(keyboard[posicion]);
+            long inicio = System.currentTimeMillis();
             answerKeyboard = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(answerKeyboard.equals(keyboard[posicion])){
+                System.out.println("");
                 System.out.println("CORRECT!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIME " + tiempo + " seconds");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("INCORRECT!!");
+                System.out.println("");
                 break;
             }
         }
@@ -610,11 +785,21 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
            String answerWord;
             int posicion = number.nextInt(words.length);
             System.out.println(words[posicion]);
+            long inicio = System.currentTimeMillis();
             answerWord = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(answerWord.equals(words[posicion])){
+                System.out.println("");
                 System.out.println("CORRECT!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIME " + tiempo + " seconds");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("INCORRECT!!");
+                System.out.println("");
                 break;
             }
         }
@@ -631,11 +816,21 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             String answerSentence;
             int posicion = number.nextInt(sentences.length);
             System.out.println(sentences[posicion]);
+            long inicio = System.currentTimeMillis();
             answerSentence = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(answerSentence.equals(sentences[posicion])){
+                System.out.println("");
                 System.out.println("CORRECT!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIME " + tiempo + " seconds");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("INCORRECT!!");
+                System.out.println("");
                 break;
             }
         }
@@ -653,14 +848,34 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             String answerParagraph;
             int posicion = number.nextInt(paragraphs.length);
             System.out.println(paragraphs[posicion]);
+            long inicio = System.currentTimeMillis();
             answerParagraph = input.nextLine();
+            long fin = System.currentTimeMillis();
             if(answerParagraph.equals(paragraphs[posicion])){
+                System.out.println("");
                 System.out.println("CORRECT!!");
+                System.out.println("");
+                long tiempo = (fin - inicio) / 1000;
+                System.out.println("");
+                System.out.println("TIME " + tiempo + " seconds");
+                System.out.println("");
             }else{
+                System.out.println("");
                 System.out.println("INCORRECT!!");
+                System.out.println("");
                 break;
             }
         }
         System.out.println("");
+    }
+    public static void problemasFisica(){
+        Scanner input = new Scanner (System.in);
+        Random number = new Random();
+        
+        System.out.println("");
+        System.out.println("***PROBLEMAS DE FÍSICA***");
+        System.out.println("");
+        
+    
     }
 }
