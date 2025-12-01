@@ -1104,9 +1104,13 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
                     lado = number.nextInt(10) + 1;
                     //DECLARACIÓN DE TIPO DE MEDIDAD QUE SE BUSCA
                     if(medida == 0){//ÁREA
+                        System.out.println("FORMULA A UTILIZAR: l * l");
+                        System.out.println("");
                         System.out.println("Calcula el área de un cuadrado con la medida de cada uno de sus lados igual a " + lado);
                         respuestaCorrecta = lado * lado;
                     }else{
+                        System.out.println("FORMULA A UTILIZAR: l + l + l + l");
+                        System.out.println("");
                         System.out.println("Calcula el perímetro de un cuadrado con la medida de cada uno de sus lados igual a: " + lado);
                         respuestaCorrecta = lado + lado + lado + lado;
                     }
@@ -1117,9 +1121,13 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
                     base1 = number.nextInt(15) + 1;
                     altura1 = number.nextInt(15) + 1;
                     if(medida == 0){
+                        System.out.println("FORMULA A UTILIZAR: b * h");
+                        System.out.println("");
                         System.out.println("Calcula el área de un rectángulo con la medida de su base igual a " + base1 + " y altura de " + altura1);
                         respuestaCorrecta = base1 * altura1;
                     }else{
+                        System.out.println("FORMULA A UTILIZAR: b + b + h + h");
+                        System.out.println("");
                         System.out.println("Calcula el perímetro de un rectángulo que tiene la medidad de su base igual a " + base1 + " y la altura de " + altura1);
                         respuestaCorrecta = (2 * base1) + (2 * altura1);
                     }
@@ -1130,11 +1138,15 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
                     base2 = number.nextInt(15) +1 ;
                     altura2 = number.nextInt(15) + 1;
                     if(medida == 0){
+                        System.out.println("FORMULA A UTILIZAR: b * h / 2");
+                        System.out.println("");
                         System.out.println("Calcula el área de un triángulo el cual tiene la medida de su base igual a " + base2 + " y la medida de su altura igual a " + altura2);
                         respuestaCorrecta = (base2 * altura2) / 2;
                     }else{
                         lado1 = number.nextInt(15) + 1;
                         lado2 = number.nextInt(10) + 1;
+                        System.out.println("FORMULA A UTILIZAR: l + l + l");
+                        System.out.println("");
                         System.out.println("Calcula el perímetro del triángulo el cual tiene una base con medida igual a " + base2 + ", un lado con medida igual a " + lado1 + " y con la otra medida de su lado igual a " + lado2);
                         respuestaCorrecta = base2 + lado1 + lado2;
                     }
@@ -1162,7 +1174,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("");
         System.out.println("*** FISICA ***");
         System.out.println("");
-        System.out.println("¿QUÉ QUIERES APRENDER HOY");
+        System.out.println("¿QUÉ QUIERES APRENDER HOY?");
         System.out.println("");
         System.out.println("1. M.R.U");
         System.out.println("2. M.R.U.A");
@@ -1219,7 +1231,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             System.out.println("");
             int num1 = number.nextInt(20) + 1, num2 = number.nextInt(10) + 1;
             int res1;
-            System.out.println("LA VELOCIDAD SI, MI DISTANCIA ES " + num1 + " METROS " + "Y EL TIEMPO ES DE " + num2 + " SEGUNDOS.");
+            System.out.println("LA VELOCIDAD SI, MI DISTANCIA ES " + num1 + " METROS " + " Y EL TIEMPO ES DE " + num2 + " SEGUNDOS.");
             System.out.println("");
             System.out.print("RESPUESTA: ");
             long inicio = System.currentTimeMillis();
@@ -1353,7 +1365,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             System.out.println("");
             int num1 = number.nextInt(20)+1, num2 = number.nextInt(10)+1, num3  = number.nextInt(10)+1;
             int res1;
-            System.out.println("LA VELOCIDAD FINAL SI, MI VELOCIDAD INICIAL ES " + num1 + " m/s " + " Y LA ACELERACIÓN ES DE " + num2 + "EL TIEMPO ES DE " + num3 + " segundos");
+            System.out.println("LA VELOCIDAD FINAL SI, MI VELOCIDAD INICIAL ES " + num1 + " m/s " + " Y LA ACELERACIÓN ES DE " + num2 + " m/s² " +" EL TIEMPO ES DE " + num3 + " segundos");
             System.out.println("");
             System.out.print("RESULTADO: ");
             long inicio = System.currentTimeMillis();
@@ -1391,7 +1403,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             System.out.println("");
             int num1 = number.nextInt(5)+1, num2 = number.nextInt(5)+1, num3 = number.nextInt(5)+1;
             int res1;
-            System.out.println("LA DISTANCIA SI, MI VELOCIDAD INICIAL ES " + num1 + "m/s " + "  EL TIEMPO ES DE " + num2 + "segundos" + " Y LA ACELERACIÓN ES DE " + num3 + " m/s");
+            System.out.println("LA DISTANCIA SI, MI VELOCIDAD INICIAL ES " + num1 + "m/s " + "  EL TIEMPO ES DE " + num2 + " segundos " + " Y LA ACELERACIÓN ES DE " + num3 + " m/s²");
             System.out.println("");
             System.out.println("Recuerda realizar lo que se encuentra después de la suma.");
             System.out.println("");
@@ -1424,7 +1436,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
         System.out.println("");
         System.out.println("***SEGUNDA LEY DE NEWTON***");
         System.out.println("");
-        System.out.println("¿QUÉ QUIERE APRENDER HOY");
+        System.out.println("¿QUÉ QUIERE APRENDER HOY?");
         System.out.println("");
         System.out.println("1. Fuerza.");
         System.out.println("2. Masa.");
@@ -1459,7 +1471,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             System.out.println("");
             int num1 = number.nextInt(25)+1, num2 = number.nextInt(20)+1;
             int res1;
-            System.out.println("LA FUERZA SI MI MASA ES " + num1 + "kg " + " Y MI ACELERACIÓN ES " + num2 + "m/s");
+            System.out.println("LA FUERZA SI MI MASA ES " + num1 + " kg " + " Y MI ACELERACIÓN ES " + num2 + " m/s²");
             System.out.println("");
             System.out.print("RESULTADO: ");
             long inicio = System.currentTimeMillis();
@@ -1470,12 +1482,12 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
              //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
                 System.out.println("");
-                System.out.println("¡CORRECTO! LA FUERZA ERA: " + resultado + "N");
+                System.out.println("¡CORRECTO! LA FUERZA ERA: " + resultado + " N");
                 System.out.println("");
                 System.out.println("TIEMPO: " + tiempo + " segundos ");
             }else{
                 System.out.println("");
-                System.out.println("¡INCORRECTO! LA FUERZA ERA: " + resultado + "N");
+                System.out.println("¡INCORRECTO! LA FUERZA ERA: " + resultado + " N");
                 System.out.println("");
                 return;
             }
@@ -1495,7 +1507,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             System.out.println("");
             int num1 = number.nextInt(25)+1, num2 = number.nextInt(20)+1;
             int res1;
-            System.out.println("LA MASA SI LA FUERZA ES " + num1 + "Newtons" + " Y MI ACELERACIÓN ES " + num2 + "m/s");
+            System.out.println("LA MASA SI LA FUERZA ES " + num1 + " Newtons " + " Y MI ACELERACIÓN ES " + num2 + " m/s²");
             System.out.println("");
             System.out.print("RESULTADO: ");
             long inicio = System.currentTimeMillis();
@@ -1531,7 +1543,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
             System.out.println("");
             int num1 = number.nextInt(25)+1, num2 = number.nextInt(20)+1;
             int res1;
-            System.out.println("ACELERACIÓN SI LA FUERZA ES " + num1 + "Newtons" + " Y LA MASA ES " + num2 + "kg");
+            System.out.println("ACELERACIÓN SI LA FUERZA ES " + num1 + " Newtons " + " Y LA MASA ES " + num2 + "kg");
             System.out.println("");
             System.out.print("RESULTADO: ");
             long inicio = System.currentTimeMillis();
@@ -1542,12 +1554,12 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
              //ESTRUCTURA DE DECISIÓN
             if(res1 == resultado){
                 System.out.println("");
-                System.out.println("¡CORRECTO! LA ACELERACIÓN ERA: " + resultado + "m/s");
+                System.out.println("¡CORRECTO! LA ACELERACIÓN ERA: " + resultado + "m/s²");
                 System.out.println("");
                 System.out.println("TIEMPO: " + tiempo + " segundos");
             }else{
                 System.out.println("");
-                System.out.println("¡INCORRECTO! LA ACELERACIÓN ERA: " + resultado + "m/s");
+                System.out.println("¡INCORRECTO! LA ACELERACIÓN ERA: " + resultado + "m/s²");
                 System.out.println("");
                 break;
             }
@@ -1643,13 +1655,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     public static String palabrasAleatorio(){
         Random number = new Random();
         List<String> palabras = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("Palabras.txt")
-                )
-            )
-        )
-        {//LOS PARENTESIS SE ENCARGAN DE CERRAR EL BufferedReader y el InputStreamReader. Y DÉSUES UNA LLAVE ABIERTA LA CUAL ESTÁ CONECTADAD A CATCH PARA PODER CONTINUAR CON LAS SISGUIENTES INSTRUCCIONES.
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("Palabras.txt")))){//LOS PARENTESIS SE ENCARGAN DE CERRAR EL BufferedReader y el InputStreamReader. Y DÉSUES UNA LLAVE ABIERTA LA CUAL ESTÁ CONECTADAD A CATCH PARA PODER CONTINUAR CON LAS SISGUIENTES INSTRUCCIONES.
             String linea;
             while((linea = buffer.readLine()) != null){
                 palabras.add(linea);
@@ -1662,13 +1668,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     public static String tecladoAleatorio(){
         Random number = new Random();
         List<String> keyboard = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("KEYBOARD.txt")
-                )
-            )
-        )
-        {
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("KEYBOARD.txt")))){
             String linea;
             while((linea = buffer.readLine()) != null){
                 keyboard.add(linea);
@@ -1680,14 +1680,8 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     }
     public static String oracionesAleatorio(){
         Random number = new Random();
-        List<String> oraciones = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("Oraciones.txt")
-                )
-            )
-        )
-        {
+        List <String> oraciones = new ArrayList<>();
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("Oraciones.txt")))){
             String linea;
             while((linea = buffer.readLine()) != null){
                 oraciones.add(linea);
@@ -1699,14 +1693,8 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     }
     public static String parrafosAleatorio(){
         Random number = new Random();
-        List<String> parrafos = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("Parrafos.txt")
-                )
-            )
-        )
-        {
+        List <String> parrafos = new ArrayList<>();
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("Parrafos.txt")))){
             String linea;
             while((linea = buffer.readLine()) != null){
                 parrafos.add(linea);
@@ -1719,13 +1707,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     public static String keyboardAleatorio(){
         Random number = new Random();
         List<String> keyboardEnglish = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("KEYBOARDENGLISH.txt")
-                )
-            )
-        )//LOS PARENTESIS SE ENCARGAN DE CERRAR EL BufferedReader y el InputStreamReader. 
-        {
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("KEYBOARDENGLISH.txt")))){
         String linea;
         while((linea = buffer.readLine()) != null){
             keyboardEnglish.add(linea);
@@ -1738,13 +1720,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     public static String wordsAleatorio(){
         Random number = new Random();
         List<String> wordsEnglish = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("WORDENGLISH.txt")
-                )
-            )
-        )
-        {
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("WORDENGLISH.txt")))){
             String linea;
             while((linea = buffer.readLine()) != null){
                 wordsEnglish.add(linea);
@@ -1757,13 +1733,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     public static String sentenceAleatorio(){
         Random number = new Random();
         List<String> sentenceEnglish = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("SENTENCEENGLISH.txt")
-                )
-            )
-        )
-        {
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("SENTENCESENGLISH.txt")))){
             String linea;
             while((linea = buffer.readLine()) != null){
                 sentenceEnglish.add(linea);
@@ -1776,13 +1746,7 @@ public class EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA {
     public static String paragraphAleatorio(){
         Random number = new Random();
         List<String> keyboardEnglish = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(
-                        EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("PARAGRAPHSENGLISH.txt")
-                )
-            )
-        )
-        {
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(EVA3_FP_PRUEBADECALCULOMENTALYMECANOGRAFIA.class.getResourceAsStream("PARAGRAPHSENGLISH.txt")))){ //ORDENADO CON LOS PARENTESIS CORRESPONDIENTES
             String linea;
             while((linea = buffer.readLine()) != null){
                 keyboardEnglish.add(linea);
